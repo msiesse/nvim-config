@@ -67,6 +67,16 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
 end)
 
+lsp.configure('pyright', {
+  settings = {
+    python = {
+      analysis = {
+        typeCheckingMode = "off",      -- disable type checker
+        diagnosticMode  = "openFilesOnly",
+      },
+    },
+  },
+})
 lsp.setup()
 
 vim.diagnostic.config({

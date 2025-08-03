@@ -74,5 +74,7 @@ use {
         "nvim-treesitter/nvim-treesitter"
     },
 }
+use 'mfussenegger/nvim-dap'
+use 'mfussenegger/nvim-dap-python'
 end)  
 
