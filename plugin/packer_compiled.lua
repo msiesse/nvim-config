@@ -84,12 +84,6 @@ _G.packer_plugins = {
     path = "/Users/martinsiesse/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  catppuccin = {
-    config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0" },
-    loaded = true,
-    path = "/Users/martinsiesse/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/martinsiesse/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -128,7 +122,7 @@ _G.packer_plugins = {
   ["copilot.lua"] = {
     after = { "copilot-cmp" },
     commands = { "Copilot" },
-    config = { "\27LJ\2\nˆ\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\npanel\1\0\1\fenabled\1\15suggestion\1\0\2\15suggestion\0\npanel\0\1\0\1\fenabled\1\nsetup\fcopilot\frequire\0" },
+    config = { "\27LJ\2\nˆ\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\npanel\1\0\1\fenabled\1\15suggestion\1\0\2\npanel\0\15suggestion\0\1\0\1\fenabled\1\nsetup\fcopilot\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -164,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/martinsiesse/.local/share/nvim/site/pack/packer/start/neotest",
     url = "https://github.com/nvim-neotest/neotest"
+  },
+  ["neotest-pest"] = {
+    loaded = true,
+    path = "/Users/martinsiesse/.local/share/nvim/site/pack/packer/start/neotest-pest",
+    url = "https://github.com/V13Axel/neotest-pest"
   },
   ["neotest-python"] = {
     loaded = true,
@@ -215,6 +214,12 @@ _G.packer_plugins = {
     path = "/Users/martinsiesse/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["rose-pine"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
+    loaded = true,
+    path = "/Users/martinsiesse/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/martinsiesse/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -225,6 +230,16 @@ _G.packer_plugins = {
     path = "/Users/martinsiesse/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["venv-selector.nvim"] = {
+    loaded = true,
+    path = "/Users/martinsiesse/.local/share/nvim/site/pack/packer/start/venv-selector.nvim",
+    url = "https://github.com/linux-cultist/venv-selector.nvim"
+  },
+  ["vim-be-good"] = {
+    loaded = true,
+    path = "/Users/martinsiesse/.local/share/nvim/site/pack/packer/start/vim-be-good",
+    url = "https://github.com/ThePrimeagen/vim-be-good"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/martinsiesse/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -233,10 +248,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: catppuccin
-time([[Config for catppuccin]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0", "config", "catppuccin")
-time([[Config for catppuccin]], false)
+-- Config for: rose-pine
+time([[Config for rose-pine]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
+time([[Config for rose-pine]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)

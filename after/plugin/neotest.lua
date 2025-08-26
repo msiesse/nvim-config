@@ -8,7 +8,8 @@ vim.keymap.set('n', '<leader>ti', ':lua require("neotest").summary.toggle()<CR>'
 
 require("neotest").setup({
   adapters = {
-    require("neotest-python")
+    require("neotest-python"),
+    require('neotest-pest'),
   }
 })
 
