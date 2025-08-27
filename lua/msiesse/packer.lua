@@ -69,6 +69,13 @@ return require('packer').startup(function(use)
         }
     }
 
+    use({
+        "stevearc/conform.nvim",
+        config = function()
+            require("conform").setup()
+        end,
+    })
+
     use {
         "zbirenbaum/copilot.lua",
         cmd = "Copilot",
